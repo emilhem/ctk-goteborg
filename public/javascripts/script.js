@@ -13,6 +13,10 @@ function initMap() {
     center: {lat: 57.706944, lng: 11.966389},
     zoom: 10
   });
+
+  updateStatus();
+
+  setInterval(updateStatus, 10000);
 }
 
 // Define a Google Marker variabe to store all of the markers in
@@ -92,7 +96,3 @@ function updateStatus() {
     }
   });
 }
-
-setTimeout(updateStatus, 2500);
-
-setInterval(updateStatus, 10000);
