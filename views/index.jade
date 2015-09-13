@@ -1,0 +1,43 @@
+doctype html
+html
+  head
+    title=title
+    link(rel='stylesheet' href='/stylesheets/bootstrap.min.css')
+    link(rel='stylesheet' href='/stylesheets/style.css')
+  body
+    div.container
+      div.row
+        div.col-xs-12
+          h1=title
+          h2#bridge Bridge information
+          p#bridgeData Loading...
+          hr
+          h2 Water level and flow information
+          div.map#map
+          hr
+          h2 Weather/air information
+          table.table.table-striped
+            tbody
+              tr
+                td Temperature
+                td#Temperature
+              tr
+                td Humidity
+                td#Humidity
+              tr
+                td Air pressure
+                td#AirPressure
+              tr
+                td Wind speed
+                td#WindSpeed
+              tr
+                td Wind direction
+                td#WindDirection
+              tr
+                td Rain fall
+                td#RainFall
+          hr
+
+    script(src='/javascripts/jquery-2.1.4.min.js')
+    script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBn9l_htg69AlLqoSSh-6qVSna8uIg2dt8&callback=initMap")
+    script(src='/javascripts/script.js')

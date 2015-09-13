@@ -1,0 +1,8 @@
+
+'use strict';
+
+module.exports = {
+	key: 'bbfb13cc-994c-4a5a-924e-85a5760b6e4c',
+  latitude: '57.7',
+  longitude: '11.966667'
+};
